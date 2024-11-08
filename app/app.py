@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    message = os.getenv("MESSAGE", "Solución de Kruguer para infraestucrura como código")
+    message = os.getenv("MESSAGE", "Buenos días, Ecuador")
     return f"<h1>{message}</h1>"
 
 if __name__ == "__main__":

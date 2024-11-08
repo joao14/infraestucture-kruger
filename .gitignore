@@ -1,1 +1,8 @@
 app/venv/
+
+iac/.terraform/
+iac/*.tfstate
+iac/*.tfstate.*
+iac/.terraform.lock.hcl
+iac/*.tfvars
+iac/*.auto.tfvars
