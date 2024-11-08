@@ -1,7 +1,3 @@
-# Cargar el archivo provider.tf
-provider "aws" {
-  region = var.aws_region
-}
 
 # 1. Crear una VPC
 resource "aws_vpc" "main" {
@@ -114,9 +110,4 @@ resource "aws_s3_bucket_policy" "app_logs_policy" {
       }
     ]
   })
-}
-
-# Importar el archivo `ecs.tf` (contiene el clúster ECS, el rol IAM, la definición de tarea y el servicio)
-module "ecs" {
-  source = "./ecs"
 }
